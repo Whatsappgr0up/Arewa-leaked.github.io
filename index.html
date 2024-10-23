@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Join WhatsApp Group</title> 
+  <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: black;
+        }
+
+        .join-button {
+            margin-top: 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .join-button:hover {
+            background-color: darkred;
+        }
+
+        /* Social media share button styles */
+        .social-share {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-share:hover {
+            background-color: #128C7E;
+        }
+
+    </style> 
+ </head> 
+ <body> 
+  <h1>JOIN WHATSAPP GROUP BELOW!</h1> 
+  <p>Group link will be reset soon.</p> <!-- JOIN NOW button --> <a href="https://supersedeasserted.com/gdbhk20ju?key=df265084d01d7b7247e90c237c440f61" target="_blank"> <button class="join-button">JOIN NOW</button> </a> <!-- Social media share button --> 
+  <div class="social-share" onclick="sharePage()">
+    📱 
+  </div> 
+  <script>
+        function sharePage() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Join WhatsApp Group',
+                    text: 'Join the WhatsApp group now!',
+                    url: window.location.href
+                }).then(() => {
+                    console.log('Thanks for sharing!');
+                }).catch(console.error);
+            } else {
+                alert('Share not supported on your browser. Please copy the link manually.');
+            }
+        }
+    </script> 
+ 
+</body></html>
